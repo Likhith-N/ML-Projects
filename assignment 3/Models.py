@@ -1,5 +1,3 @@
-# ------------------------------------------------------Question 1----------------------------------------------------------------
-
 import numpy as np
 import seaborn as sns
 from sklearn import datasets
@@ -14,7 +12,7 @@ import math
 
 # Reading Dataset file
 df = pd.read_csv(
-    "C:/Users/likic/OneDrive/Documents/vs code files/py projects/tequed files/assignment 3/ISL-linear-regression-master/data/Advertising.csv")
+    "ISL-linear-regression-master/data/Advertising.csv")
 
 # Dividing the data to train the model
 x = df.iloc[:, 1:-1].values
@@ -34,12 +32,9 @@ print("MAE =", format(metrics.mean_absolute_error(y_test, y_pred)))
 print("MSE =", format(metrics.mean_squared_error(y_test, y_pred)))
 print("RMSE =", format(metrics.mean_squared_error(y_test, y_pred, squared=False)))
 
-# ------------------------------------------------------Question 2----------------------------------------------------------------
-
-
 # Reading Dataset file
 df1 = pd.read_csv(
-    "C:/Users/likic/OneDrive/Documents/vs code files/py projects/tequed files/assignment 3/bike sharing data/train.csv")
+    "bike sharing data/train.csv")
 
 #col_names = ["season", "holiday", "workingday","weather", "temp", "atemp", "humidity", "windspeed"]
 # Dividing the data to train the model
@@ -65,9 +60,6 @@ plt.xlabel("Actual Values")
 plt.ylabel("Predicted values")
 plt.grid()
 plt.show()
-
-# ------------------------------------------------------Question 3----------------------------------------------------------------
-
 
 # Logistic Regression model
 
